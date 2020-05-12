@@ -26,7 +26,7 @@ def check_root_full():
 
 def check_cpu_constrained():
     """Returns True if the cpu is having too much usage, False otherwise."""
-    return psutil.cpu_percentage(1) > 75
+    return psutil.cpu_percent(1) > 75
 
 def check_no_network():
     """Return True if it fails to resolve Google's URL, False otherwise"""
